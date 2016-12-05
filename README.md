@@ -108,13 +108,32 @@ Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
 #### Explain what you did, and answer the questions here:
 
 
+
 ## 4. Question time! (~20 mins) [6p]
 
 ### Where the abstract class is useful? [2p]
 #### Your answer:
+The abstract class is useful, when two or more subclasses are expected to do the similar thing, method in different ways.
+For example the instrument workshop we've done, where there were 3 instrument , they all have string numbers, and play methods.
+So we used an abstract class to define these similarities. 
+And afterwards we could customize it in every instrument class, as it was required.
+The important thig is that, all of the classes that extends an abstract class, have to declare implementations of its abstract methods.
 
 ### Describe a method! Show the necessary parts and how are them called! [2p]
 #### Your answer:
+ 1 public   2 void   3 exampleMethod   4(int i, int j)   5{};
+
+1: this part defines the acces level of the method, can be public, private, protected
+2: defines the return value, in this case it returns nothing, if it was String, the method would have to return a string value
+3: the name of the method, always starts with lowercase, has to be meaningful
+4:place for parameters
+5: the curly braces contains the method "body", here we can emphasize all the functionalities we want this method for.
+
+
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
+A Constructor is for creating an instance of a class/object. So it is  invoked exactly at the 
+time of the creation of the specified object. We use it to give special parametersto an object, or initialize it properly .
+There are two types, the default constructor(it is created even if it I do not declare it) which
+ has no parameters, and the parameterized which has, obviously.
